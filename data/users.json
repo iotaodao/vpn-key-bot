@@ -1,0 +1,29 @@
+{
+  "user_1": {
+    "telegram_id": 123456789,
+    "telegram_username": "john_doe",
+    "keys": [
+      "vless://12345678-1234-1234-1234-123456789abc@your-server.com:443?encryption=none&security=tls&sni=your-server.com&type=ws&host=your-server.com&path=%2Fwebsocket#User1-Key1",
+      "vless://87654321-4321-4321-4321-cba987654321@your-server.com:443?encryption=none&security=tls&sni=your-server.com&type=ws&host=your-server.com&path=%2Fwebsocket#User1-Key2"
+    ],
+    "created_at": "2024-01-15",
+    "status": "active"
+  },
+  "user_2": {
+    "telegram_id": 987654321,
+    "telegram_username": "jane_smith",
+    "keys": [
+      "vless://abcdef12-3456-7890-abcd-ef1234567890@your-server.com:443?encryption=none&security=tls&sni=your-server.com&type=ws&host=your-server.com&path=%2Fwebsocket#User2-Key1"
+    ],
+    "created_at": "2024-01-16",
+    "status": "active"
+  },
+  "user_3": {
+    "telegram_id": 555666777,
+    "telegram_username": "test_user",
+    "keys": [],
+    "created_at": "2024-01-17",
+    "status": "pending",
+    "note": "Ожидает выдачи ключей"
+  }
+}
