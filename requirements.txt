@@ -1,0 +1,23 @@
+# Telegram Bot API
+aiogram==2.25.1
+
+# HTTP клиент
+aiohttp==3.8.6
+
+# Асинхронная поддержка
+asyncio-mqtt==0.16.1
+
+# Работа с JSON и данными
+ujson==5.8.0
+
+# Логирование
+loguru==0.7.2
+
+# Переменные окружения
+python-dotenv==1.0.0
+
+# Валидация данных
+pydantic==2.4.2
+
+# Дополнительные утилиты
+python-dateutil==2.8.2
