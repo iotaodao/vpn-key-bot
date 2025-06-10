@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  vpn-support-bot:
+    build: .
+    container_name: vpn-support-bot
+    restart: unless-stopped
+    environment:
+      # Обязательные переменные (замените на свои значения)
+      - BOT_TOKEN=YOUR_BOT_TOKEN_HERE
+      - ADMIN_IDS=123456789,987654321  # ID администраторов через запятую
+      - DATABASE_PATH=/app/data/users.json
+    volumes:
+      # Подключение директории с базой данных
+      - ./data:/app/data
+      # Опционально: подключение логов
+      - ./logs:/app/logs
+    networks:
+      - vpn-bot-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  vpn-bot-network:
+    driver: bridge
+
+volumes:
+  bot-data:
+    driver: local
